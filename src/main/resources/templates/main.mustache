@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Работа с БД</title>
+    </head>
+    <body>
+        <form method="post">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="text" name="count" placeholder="Количество">
+            <input type="text" name="coast" placeholder="Цена">
+            <button type="submit">Записать</button>
+        </form>
+
+        <div>моя БД</div>
+        {{#something}}
+            <div>
+                <b>{{id}}</b>
+                <span>{{name}}</span>
+                <span>{{count}}</span>
+                <span>{{coast}}</span>
+            </div>
+        {{/something}}
+    </body>
+</html>
